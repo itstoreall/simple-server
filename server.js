@@ -15,7 +15,6 @@ const TypeMime = {
 http
   .createServer(async (req, res) => {
     const { pathname } = new URL(req.url, `http://${req.headers.host}`);
-
     let filename = pathname;
 
     switch (pathname) {
